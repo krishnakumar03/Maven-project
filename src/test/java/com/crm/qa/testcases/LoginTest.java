@@ -25,12 +25,12 @@ public class LoginTest extends Base{
 		loginpage = new LoginPage();	
 	}
 	
-	/*@Test
+	@Test
 	public void validatetitle()
 	{
 		String title = loginpage.title();
 		Assert.assertEquals(title, "Free CRM software in the cloud powers sales and customer service");
-	} */
+	} 
 	
 	@Test 
 	public void login()

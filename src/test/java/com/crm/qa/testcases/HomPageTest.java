@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -24,7 +25,7 @@ public class HomPageTest extends Base{
 			loginpage = new LoginPage();
 			// homepage = new HomePage();
 			homepage= loginpage.login(prop.getProperty("username"), prop.getProperty("password"));	
-			driver.findElement(By.partialLinkText(""));
+			
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 		
@@ -34,8 +35,19 @@ public class HomPageTest extends Base{
 	@Test
 	public void contactmethod()
 	{
-		homepage.hovering();
-		
+			try {
+				homepage.hovering();
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	
 	}
-
+ @AfterMethod
+ public void after()
+ {
+	 driver.close();
+	 
+ }
 }

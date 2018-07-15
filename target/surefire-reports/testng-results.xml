@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="90861" started-at="2018-07-15T16:14:49Z" finished-at="2018-07-15T16:16:20Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="90861" started-at="2018-07-15T16:14:49Z" finished-at="2018-07-15T16:16:20Z">
+      <class name="com.crm.qa.testcases.HomPageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.crm.qa.testcases.HomPageTest@6b2fad11]" name="before" is-config="true" duration-ms="26221" started-at="2018-07-15T16:14:49Z" finished-at="2018-07-15T16:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="contactmethod()[pri:0, instance:com.crm.qa.testcases.HomPageTest@6b2fad11]" name="contactmethod" duration-ms="2197" started-at="2018-07-15T16:15:16Z" finished-at="2018-07-15T16:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactmethod -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.crm.qa.testcases.HomPageTest@6b2fad11]" name="after" is-config="true" duration-ms="97" started-at="2018-07-15T16:15:18Z" finished-at="2018-07-15T16:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.crm.qa.testcases.HomPageTest -->
+      <class name="com.crm.qa.testcases.NewContactTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.crm.qa.testcases.NewContactTest@73f792cf]" name="before" is-config="true" duration-ms="22328" started-at="2018-07-15T16:15:58Z" finished-at="2018-07-15T16:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testcase()[pri:0, instance:com.crm.qa.testcases.NewContactTest@73f792cf]" name="testcase" duration-ms="185" started-at="2018-07-15T16:16:20Z" finished-at="2018-07-15T16:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+      </class> <!-- com.crm.qa.testcases.NewContactTest -->
+      <class name="com.crm.qa.testcases.LoginTest">
+        <test-method status="PASS" signature="call()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="call" is-config="true" duration-ms="17631" started-at="2018-07-15T16:15:18Z" finished-at="2018-07-15T16:15:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="login" duration-ms="12046" started-at="2018-07-15T16:15:35Z" finished-at="2018-07-15T16:15:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="after" is-config="true" duration-ms="60" started-at="2018-07-15T16:15:47Z" finished-at="2018-07-15T16:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="call()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="call" is-config="true" duration-ms="9952" started-at="2018-07-15T16:15:48Z" finished-at="2018-07-15T16:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call -->
+        <test-method status="PASS" signature="validatetitle()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="validatetitle" duration-ms="34" started-at="2018-07-15T16:15:58Z" finished-at="2018-07-15T16:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetitle -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.crm.qa.testcases.LoginTest@79698539]" name="after" is-config="true" duration-ms="58" started-at="2018-07-15T16:15:58Z" finished-at="2018-07-15T16:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.crm.qa.testcases.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -6,10 +6,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.Base;
 
 public class HomePage extends Base{
+	
+	//WebDriverWait drivers;
 	
 	@FindBy(xpath = "//td[contains(text(),'User: Naveen K')]")
 	@CacheLookup
@@ -28,16 +32,25 @@ public class HomePage extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public DealsPage hovering()
+	public boolean headervalidation()
 	{
-		//contacts.click();
-		deallink.click();
-	//	Actions action = new Actions(driver);
-		//action.moveToElement(contacts).build().perform();
-		return new DealsPage();
+		return userNameLabel.isDisplayed();
+		
+	}
+	public NewContactsPage hovering()
+	{
+
+    WebDriverWait wait = new WebDriverWait(driver,30);
+    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("mainpanel"));
+   	WebElement element = wait.until(ExpectedConditions.visibilityOf(contactslink));
+   	element.click();
+   	return new NewContactsPage(); 
+
+    
+	} 
 		
 	}
 	
 	
 	
-}
+
